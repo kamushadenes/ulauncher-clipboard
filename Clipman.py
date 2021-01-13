@@ -33,6 +33,6 @@ def getHistory():
     # The only separator options are zero bytes and line breaks.
     # Line breaks are very likely to be in the actual clipboard entries, so we can't use that.
     # Zero bytes are less likely, but would not be my first choice.
-    return execGet("sh", "-c", "{0} pick --tool=STDOUT --print0".format(client)).split(
-        "\x00"
-    )
+    return execGet(
+        "sh", "-c", "{0} pick --max-items=30 --tool=STDOUT --print0".format(client)
+    ).split("\x00")
