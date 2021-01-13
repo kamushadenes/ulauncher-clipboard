@@ -29,7 +29,7 @@ from ulauncher.api.shared.action.ExtensionCustomAction import ExtensionCustomAct
 from ulauncher.api.shared.action.RenderResultListAction import RenderResultListAction
 
 
-clipboardManagers = [CopyQ, GPaste, Clipster, Clipman]
+clipboardManagers = [Clipman, CopyQ, GPaste, Clipster]
 sorter = lambda m: int("{}{}".format(int(m.isEnabled()), int(m.isRunning())))
 
 
