@@ -12,7 +12,7 @@ def canStart():
 
 
 def isRunning():
-    return bool(pidOf("clipman"))
+    return bool(pidOf("wl-paste"))
 
 
 def isEnabled():
